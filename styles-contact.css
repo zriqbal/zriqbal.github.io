@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/bricks_bg.jpg)
+  background: url(images/gradientLinesBkg.jpg)
     center center fixed no-repeat;
   background-size: cover;
 	
@@ -68,20 +68,34 @@ html, body {
 }
 
 .center {
-    width: 800px;
+    width: 1000px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
-	text-align: center;
-	border: 4px dashed white;
+}
+
+.console {
+    max-width: 100%;
+    max-height: 100%;
 }
 
    
-#logo {
-    margin-bottom: 16px;
-	border: 3px dashed red;
-	text-align: center;
+.logo {
+    position: absolute;
+    top: 230px;
+    left: 790px;
+    width: 200px;
+    height: 200px;
 }
+
+.navBar{
+    position: absolute;
+    top: 500px;
+    left: 790px;
+}
+
+/*
+
+not sure if i'm gonna use headers so commenting out for now
 
 h1 {
 	font-family: rinse, sans-serif;
@@ -104,6 +118,8 @@ h2 {
     margin: 0px auto 25px auto;
 }
 
+*/
+
 p {
     font-family: effra, sans-serif;
     font-weight: 500;
@@ -111,19 +127,18 @@ p {
 	font-size: 1.2em;
     line-height: 1.6;
     color: #fff;
+    text-align: center;
 }
 
 nav{
-    font-family: effra, sans-serif;
-    font-weight: 500;
-    font-style: italic;
-	font-size: 1.2em;
+    font-family: lores-9-plus-narrow,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	font-size: 2.2em;
     line-height: 1.6;
     width: 400px;
     margin: 0 auto;
-    border: dashed turquoise;
-    border-width: 3px 0;
-    text-align: center;
+    text-align: left;
     margin-top: 2em;
 }
 
@@ -137,14 +152,12 @@ nav a{
 }
 
 a{
-    color:azure;
+    color: #573B8E;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover{
-    color:black;
-    background:pink;
+    color: #E4E3FF;
 }
     
-
