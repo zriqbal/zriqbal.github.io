@@ -71,62 +71,62 @@ html, body {
     width: 1000px;
 	padding: 2%;
     margin: 100px auto;
+    align-content: center;
+}
+
+#navRect {
+    border-radius: 15px;
+    background: #65c7ff;
+    padding: 20px;
+    width: 310px;
+    height: 190px;
+    opacity: 0.65;
+}
+
+.blueBox{
+    position: absolute;
+    top: 630px;
+    left: 320px;
+}
+
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .console {
+    position: relative;
     max-width: 100%;
     max-height: 100%;
 }
 
-   
 .logo {
+   position: absolute;
+    top: 150px;
+    left: 365px;
+}
+
+.textLogo{
     position: absolute;
-    top: 330px;
-    left: 790px;
-    width: 200px;
-    height: 200px;
+    top: 415px;
+    left: 265px;
 }
 
 .navBar{
     position: absolute;
-    top: 700px;
-    left: 790px;
+    top: 575px;
+    left: 385px;
 }
 
-/*
-
-not sure if i'm gonna use headers so commenting out for now
-
-h1 {
-	font-family: rinse, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	font-size: 1.5em;
-	font-size: 2em;
-    margin: 0px auto 10px auto;
-    color: #fff;
-}
-
-h2 {
-    font-family: rinse, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	font-size: 1.5em;
-    line-height: 1.4;
-    color: #fff;
-    padding: 0px 0px;
-    margin: 0px auto 25px auto;
-}
-
-*/
 
 p {
-    font-family: effra, sans-serif;
-    font-weight: 500;
-    font-style: italic;
-	font-size: 1.2em;
-    line-height: 1.6;
-    color: #fff;
+    font-family: lores-9-plus-narrow,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	font-size: 1.5em;
+    line-height: 1.36;
+    color: #bc278d;
     text-align: center;
 }
 
@@ -135,8 +135,9 @@ nav{
     font-weight: 700;
     font-style: normal;
 	font-size: 2.2em;
-    line-height: 1.6;
+    line-height: 1.36;
     width: 400px;
+    height: 100px;
     margin: 0 auto;
     text-align: left;
     margin-top: 2em;
@@ -152,12 +153,156 @@ nav a{
 }
 
 a{
-    color: #573B8E;
+    color: #2b277e;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover{
-    color: #E4E3FF;
+a:hover {
+    color: #f9bc5c;
 }
+
+
+#triangle-right {
+    position: absolute;
+    top: 88px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #f9bc5c;
+    border-bottom: 15px solid transparent;
+    }
+
+.hide{
+    display: none;
+}
+
+.visible:hover + .hide{
+    display: block;
+}
+
+
+#triangle-right2 {
+    position: absolute;
+    top: 153px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #f9bc5c;
+    border-bottom: 15px solid transparent;
+    }
+
+
+.visible2:hover + .hide{
+    display: block;
+}
+
+
+#triangle-right3 {
+    position: absolute;
+    top: 223px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #f9bc5c;
+    border-bottom: 15px solid transparent;
+    }
+
+
+.visible3:hover + .hide{
+    display: block;
+}
+
+
+
+
+
+
+
+/** VISIBILITY HOVER W TRIANGLE; TRIED: A:HOVER + ID + DISPLAY
+#f9e0b8
+VISIBILITY HOVER W HEART; TRIED: WORK (NEW CLASS): HOVER + ID/CLASS + DISPLAY/OPACITY
     
+
+#heart1 {
+      position: relative;
+      width: 100px;
+      height: 40px;
+    
+    }
+    #heart1:before,
+    #heart1:after {
+      position: absolute;
+      content: "";
+      left: 356px;
+      top: -426px;
+      width: 25px;
+      height: 40px;
+      background: #7b76ee;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 1% 50%;
+    }
+    #heart1:after {
+      left: 310px;
+      transform: rotate(45deg);
+      transform-origin: 200% 200%;
+    }
+
+#heart2 {
+      position: relative;
+      width: 100px;
+      height: 40px;
+    
+    }
+    #heart2:before,
+    #heart2:after {
+      position: absolute;
+      content: "";
+      left: 356px;
+      top: -399px;
+      width: 25px;
+      height: 40px;
+      background: #7b76ee;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 1% 50%;
+    }
+    #heart2:after {
+      left: 310px;
+      transform: rotate(45deg);
+      transform-origin: 200% 200%;
+    }
+
+
+
+
+#heart3 {
+      position: relative;
+      width: 100px;
+      height: 40px;
+
+    }
+    #heart3:before,
+    #heart3:after {
+      position: absolute;
+      content: "";
+      left: 356px;
+      top: -370px;
+      width: 25px;
+      height: 40px;
+      background: #7b76ee;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 1% 50%;
+    }
+    #heart3:after {
+      left: 310px;
+      transform: rotate(45deg);
+      transform-origin: 200% 200%;
+    }
+
+
