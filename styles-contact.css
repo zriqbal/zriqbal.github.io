@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/gradientLinesBkg.jpg)
+  background: url(images/pinkBkg.jpg)
     center center fixed no-repeat;
   background-size: cover;
 	
@@ -81,7 +81,7 @@ html, body {
    
 .logo {
     position: absolute;
-    top: 230px;
+    top: 330px;
     left: 790px;
     width: 200px;
     height: 200px;
@@ -89,7 +89,7 @@ html, body {
 
 .navBar{
     position: absolute;
-    top: 500px;
+    top: 700px;
     left: 790px;
 }
 
