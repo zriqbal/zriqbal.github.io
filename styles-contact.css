@@ -53,18 +53,15 @@ table {
 
 
 
-/* ---------- Hello, my name is Zara Iqbal and this is the beginning of my CONTACT PAGE CSS for 318 Digital Typography November 2019 ------------ */
+/* ---------- Hello, my name is Zara Iqbal and this is the beginning of my CONTACT PAGE CSS for 201 Digital Publishing System 2020 ------------ */
 
 html, body {
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/pinkBkg.jpg)
-    center center fixed no-repeat;
-  background-size: cover;
-	
-	
+  background: linear-gradient(to bottom, #65c7ff 50%, #7b76ee 100%);	
+  background-attachment: fixed;
 }
 
 .center {
@@ -89,30 +86,46 @@ html, body {
     left: 320px;
 }
 
+
+/* this containter/div used to contain logo, blinking text + navigation and center it on the 3ds
+position is relative for screen resizing 
+*/
 .container{
     position: relative;
     top: 0;
     left: 0;
 }
 
+/*
+contains the 3ds image bc original is way too big
+*/
 .console {
     position: relative;
     max-width: 100%;
     max-height: 100%;
 }
 
+/* 
+stuff on top of 3ds (logo, text etc.) are positioned to be absolute so they don't leave the 3ds/containter div 
+*/
 .logo {
    position: absolute;
-    top: 150px;
-    left: 365px;
+    top: 155px;
+    left: 385px;
 }
 
+/*
+in html, the p calls this class for text positioning 
+*/
 .textLogo{
     position: absolute;
     top: 415px;
     left: 265px;
 }
 
+/*
+contains the nav bar
+*/
 .navBar{
     position: absolute;
     top: 575px;
@@ -130,13 +143,28 @@ p {
     text-align: center;
 }
 
+/* 
+animated text under logo so it blinks to make it more like a 3ds
+(second class p calls)
+*/
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #bc278d;    }
+    49%{    color: #bc278d; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #bc278d;    }
+}
+
 nav{
     font-family: lores-9-plus-narrow,sans-serif;
     font-weight: 700;
     font-style: normal;
 	font-size: 2.2em;
     line-height: 1.36;
-    width: 400px;
+    width: 220px; 
     height: 100px;
     margin: 0 auto;
     text-align: left;
@@ -163,6 +191,12 @@ a:hover {
 }
 
 
+/* 
+triangle hover effect: first copied code for triangle and resized/placed so that it aligns with the nav bar.
+#triangle-right and .hide class is called by same div in html --> triangle @ default is invisible/hidden
+.visible class is called in div that has the text --> when cursor hovers over said text, it is displayed
+created new triangle ids + hide/visible classes for each triangle (three)
+*/
 #triangle-right {
     position: absolute;
     top: 88px;
@@ -215,94 +249,3 @@ a:hover {
 .visible3:hover + .hide{
     display: block;
 }
-
-
-
-
-
-
-
-/** VISIBILITY HOVER W TRIANGLE; TRIED: A:HOVER + ID + DISPLAY
-#f9e0b8
-VISIBILITY HOVER W HEART; TRIED: WORK (NEW CLASS): HOVER + ID/CLASS + DISPLAY/OPACITY
-    
-
-#heart1 {
-      position: relative;
-      width: 100px;
-      height: 40px;
-    
-    }
-    #heart1:before,
-    #heart1:after {
-      position: absolute;
-      content: "";
-      left: 356px;
-      top: -426px;
-      width: 25px;
-      height: 40px;
-      background: #7b76ee;
-      border-radius: 50px 50px 0 0;
-      transform: rotate(-45deg);
-      transform-origin: 1% 50%;
-    }
-    #heart1:after {
-      left: 310px;
-      transform: rotate(45deg);
-      transform-origin: 200% 200%;
-    }
-
-#heart2 {
-      position: relative;
-      width: 100px;
-      height: 40px;
-    
-    }
-    #heart2:before,
-    #heart2:after {
-      position: absolute;
-      content: "";
-      left: 356px;
-      top: -399px;
-      width: 25px;
-      height: 40px;
-      background: #7b76ee;
-      border-radius: 50px 50px 0 0;
-      transform: rotate(-45deg);
-      transform-origin: 1% 50%;
-    }
-    #heart2:after {
-      left: 310px;
-      transform: rotate(45deg);
-      transform-origin: 200% 200%;
-    }
-
-
-
-
-#heart3 {
-      position: relative;
-      width: 100px;
-      height: 40px;
-
-    }
-    #heart3:before,
-    #heart3:after {
-      position: absolute;
-      content: "";
-      left: 356px;
-      top: -370px;
-      width: 25px;
-      height: 40px;
-      background: #7b76ee;
-      border-radius: 50px 50px 0 0;
-      transform: rotate(-45deg);
-      transform-origin: 1% 50%;
-    }
-    #heart3:after {
-      left: 310px;
-      transform: rotate(45deg);
-      transform-origin: 200% 200%;
-    }
-
-
