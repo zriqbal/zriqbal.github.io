@@ -1,0 +1,101 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; display: block;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+img {
+    width: 100%; /*Please leave this line.*/
+}
+
+body {
+    
+    background-color: rgb(250 250 250); /* Not totally white. */
+	color: rgb(37 37 37);
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    
+}
+
+h1 {
+    
+    background-color: rgb(240 141 52);
+	font-size: 2.6rem;
+	color: rgb(250 250 250);
+	font-family: Sutro, serif;  
+    font-weight: 700;  
+    font-style: normal;
+	letter-spacing: .1; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    padding: 2rem 2rem 0rem;
+    
+}
+
+h2 {
+    
+    background-color: rgb(240 141 52);
+	font-size: 1.5rem;
+	color: rgb(249 221 191);
+	font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+	letter-spacing: .1; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    padding: .5rem 2rem 1.3rem;
+
+}
+
+figcaption {
+    
+    padding: 1rem 2rem;
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+    
+}
+
+h3 {
+    
+    background-color: rgb(250 250 250);
+	font-size: 1.3rem;
+	color: rgb(240 141 52);
+	font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+    text-transform: uppercase;
+	letter-spacing: .1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    padding: .5rem 2rem .5rem;
+
+}
+
+ul li {
+
+	margin: 1rem 2rem 1rem;
+    display: list-item
+    
+}
+
+ul {
+    
+    color: rgb(34 34 34);
+}
+
+ol li {
+
+	margin: 1rem 2rem 1rem;
+    display: list-item
+}
+
+ol {
+    color: rgb(34 34 34);
+}
+
+footer {
+    
+    background-color: rgb(240 141 52);
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    color: rgb(250 250 250);
+    padding: 1rem 2rem;
+}
+
+
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
