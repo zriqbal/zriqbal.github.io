@@ -5,7 +5,8 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 
 img {
 	width: 100%;
-    padding-top: 2em;
+    	padding-top: 2em;
+	display: block;
 }
 
 body {
