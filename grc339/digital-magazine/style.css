@@ -1,0 +1,79 @@
+/*CSS document*/
+
+body {
+    background-color: #443640
+}
+
+h1, nav{
+    max-width: auto;
+}
+
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-right: .75em;
+    font-family: itc-benguiat, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    
+}
+
+nav ul li a{
+    color: #F4F4F4;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover{    
+    color: #FF6B6C;
+}
+
+h2, h3{
+    font-family: itc-benguiat, serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFCCA6;
+    text-decoration: none;
+}
+
+p{
+    font-family: latino-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F4F4F4;
+    text-decoration: none;
+    
+}
+
+figcaption{
+    font-family: itc-benguiat, serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #F4F4F4;
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+figure {
+    margin: 1em 0em;
+}
+
+img{
+    width: 100%;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a:link{
+  text-decoration: none!important;
+}
