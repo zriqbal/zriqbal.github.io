@@ -1,0 +1,180 @@
+/*CSS document*/
+
+body {
+    background-color: #222222;
+}
+
+nav{
+    max-width: auto;
+}
+
+h1{
+    max-width: 15em;
+}
+
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-right: .75em;
+    font-family: itc-benguiat, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    
+}
+
+nav ul li a{
+    color: #FFCCA6;
+    text-decoration: none;    
+}
+
+nav ul li a:hover{    
+    color: #C9030D;
+}
+
+h2, h3{
+    font-family: itc-benguiat, serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFCCA6;
+    text-decoration: none;
+}
+
+p{
+    font-family: latino-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F0F0F0;
+    text-decoration: none;
+    font-size: 1.15em;   
+}
+
+p.padding{
+    padding-bottom: 2em;
+}
+
+figcaption{
+    font-family: itc-benguiat, serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #FFCCA6;
+    padding-top: .5em;
+}
+
+div.container {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+
+
+section{
+    max-width: 40em;
+    margin: 0 auto 1em;
+}
+
+figure {
+    margin: 1em 0em;
+}
+
+img{
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a:link{
+    text-decoration: none!important;
+}
+
+main, footer, article{
+        border-top: .1em solid #C9030D;
+    }
+
+
+@media screen and (min-width: 60em){
+    div.container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 2.5em;
+    }
+    
+    header{
+        grid-column: 1/3;
+    }
+    
+    main{
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 2.5em;
+    }
+    
+    section.mainStory{
+        grid-column: 1/3;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.mainStory figure{
+        flex: 1 0 18em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.mainStory figure div{
+        flex: 1 0 18em;
+        background-image: url(nope.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }    
+    
+    section.mainStory figure div img, section.secondaryGetOut figure div img{
+        height: 100%;
+        opacity: 0;
+    }
+    
+    section.mainStory figure figcaption,  section.secondaryGetOut figure figcaption{
+        flex: 0 0 3em;
+    }
+    
+    section.mainStory h3{
+        flex: 0 0 auto;
+        margin: 0;
+    }
+    
+    section.secondaryUs{
+        grid-column: 2/4;
+    }
+     
+    section.secondaryGetOut figure{
+        flex: 1 0 10em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.secondaryGetOut figure div{
+        flex: 1 0 18em;
+        background-image: url(getoutphoto.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }    
+
+    aside{
+        grid-column: 2/3;
+        border-top: .1em solid #C9030D;
+    }
+    
+    article, footer.story{
+        max-width: 50em;
+    }
+
+}
